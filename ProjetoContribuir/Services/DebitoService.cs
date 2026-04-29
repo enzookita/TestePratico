@@ -14,7 +14,8 @@ public class DebitoService
             ContribuinteId = createDebito.ContribuinteId,
             Valor = createDebito.Valor,
             DataPagamento = createDebito.DataPagamento ?? null,
-            DataVencimento = createDebito.DataVencimento ?? DateTime.MinValue
+            DataVencimento = createDebito.DataVencimento ?? DateTime.MinValue,
+            DataCriacao = DateTime.Now
         };
 
         try
